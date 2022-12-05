@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    /*cho phép thẻ div (col) nổi lên trên*/
+    display: flex;
+    /*!*Các thẻ div (col)  không đủ chỗ chứa trên 1 hàng thì rớt xuống*!*/
+    flex-wrap: wrap;
+}
+
+/*màn hình điện thoai*/
+@media only screen and (max-width: 740px ) {
+    .col-s-1 {
+        width: 8.33333%;
+    }
+
+    .col-s-2 {
+        width: 16.66667%;
+    }
+
+    .col-s-3 {
+        width: 25%;
+    }
+
+    .col-s-4 {
+        width: 33.33333%;
+    }
+
+    .col-s-5 {
+        width: 41.66667%;
+    }
+
+    .col-s-6 {
+        width: 50%;
+    }
+
+    .col-s-7 {
+        width: 58.33333%;
+    }
+
+    .col-s-8 {
+        width: 66.66667%;
+    }
+
+    .col-s-9 {
+        width: 75%;
+    }
+
+    .col-s-10 {
+        width: 83.33333%;
+    }
+
+    .col-s-11 {
+        width: 91.66667%;
+    }
+
+    .col-s-12 {
+        width: 100%;
+    }
+
+    /* tăng kích thước font cho dễ đọc
+    li{
+        font-size: 40px;
+        text-align: center;
+        color: white;
+    }
+    p{
+        font-size: 35px;
+        color: white;
+    }
+    .title{
+        font-size: 55px;
+        color: white;
+    } */
+    .heading .heading__list .heading__item {
+        padding: 1rem 1rem;
+    }
+}
+
+/*Màn hinh laptop và máy tính bảng*/
+@media only screen and (min-width: 741px)and (max-width: 1240px) {
+    .col-m-1 {
+        width: 8.33333%;
+    }
+
+    .col-m-2 {
+        width: 16.66667%;
+    }
+
+    .col-m-3 {
+        width: 25%;
+    }
+
+    .col-m-4 {
+        width: 33.33333%;
+    }
+
+    .col-m-5 {
+        width: 41.66667%;
+    }
+
+    .col-m-6 {
+        width: 50%;
+    }
+
+    .col-m-7 {
+        width: 58.33333%;
+    }
+
+    .col-m-8 {
+        width: 66.66667%;
+    }
+
+    .col-m-9 {
+        width: 75%;
+    }
+
+    .col-m-10 {
+        width: 83.33333%;
+    }
+
+    .col-m-11 {
+        width: 91.66667%;
+    }
+
+    .col-m-12 {
+        width: 100%;
+    }
+}
+
+/*Màn hình máy tính pc và tivi smart*/
+@media only screen and (min-width: 1241px) {
+    .col-l-1 {
+        width: 8.33333%;
+    }
+
+    .col-l-2 {
+        width: 16.66667%;
+    }
+
+    .col-l-3 {
+        width: 25%;
+    }
+
+    .col-l-4 {
+        width: 33.33333%;
+    }
+
+    .col-l-5 {
+        width: 41.66667%;
+    }
+
+    .col-l-6 {
+        width: 50%;
+    }
+
+    .col-l-7 {
+        width: 58.33333%;
+    }
+
+    .col-l-8 {
+        width: 66.66667%;
+    }
+
+    .col-l-9 {
+        width: 75%;
+    }
+
+    .col-l-10 {
+        width: 83.33333%;
+    }
+
+    .col-l-11 {
+        width: 91.66667%;
+    }
+
+    .col-l-12 {
+        width: 100%;
+    }
+}
+
+.heading {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.heading__list {
+    display: flex;
+    background-color: #222222;
+}
+
+.heading__item {
+    cursor: pointer;
+    display: inline-block;
+    padding: 1.5rem 2rem;
+    background-color: #222222;
+    color: #535e74;
+    transition: all 0.2s linear;
+    border: 1px solid transparent;
+}
+
+.heading__item:last-child {
+    margin-left: auto;
+}
+
+.heading__item:hover {
+    background-color: black;
+    color: white;
+}
+
+.content {
+    display: flex;
+}
+
+.content .content__left {
+    text-align: center;
+    /* width: 15%; */
+    height: 30rem;
+    background-color: #f1f1f1;
+}
+
+.content .content__left .content__list {
+    margin-top: 1rem;
+}
+
+.content .content__left .content__list .content__item {
+    cursor: pointer;
+    color: blue;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+.content .content__center {
+    /* width: 70%; */
+    height: 10rem;
+    background-color: #ffffff;
+}
+
+.content .content__center .content__title {
+    text-indent: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.content .content__center .content__text {
+    font-size: 1.6rem;
+    margin: 10px 0 25px 10px;
+}
+
+.content .content__center .content__title2 {
+    font-size: 1.6rem;
+    margin: 20px 0 20px 10px;
+    font-weight: bold;
+}
+
+.content .content__right {
+    text-align: center;
+    /* width: 15%; */
+    height: 30rem;
+    background-color: #f1f1f1;
+}
+
+.content .content__right .content__ads {
+    padding: 2rem 4rem;
+    border: 2px solid #f2f2f2;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    margin: 1rem 2rem;
+}
+
+.footer {
+    height: 5rem;
+    background-color: #555555;
+    text-align: center;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.footer .footer__text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
