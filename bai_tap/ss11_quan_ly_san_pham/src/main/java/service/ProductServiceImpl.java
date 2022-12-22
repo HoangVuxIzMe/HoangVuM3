@@ -10,12 +10,12 @@ public class ProductServiceImpl implements IProductService{
     private IProductRepository productRepository = new ProductRepositoryImpl();
     @Override
     public List<Product> findAll() {
-        return null;
+        return productRepository.findAll();
     }
 
     @Override
     public Product findById(int id) {
-        return null;
+        return productRepository.findById(id);
     }
 
     @Override
@@ -24,7 +24,17 @@ public class ProductServiceImpl implements IProductService{
     }
 
     @Override
-    public boolean delete(int id) {
-        return false;
+    public void delete(int id) {
+        productRepository.delete(id);
+    }
+
+    @Override
+    public void update(int id, Product product) {
+        productRepository.update(id, product);
+    }
+
+    @Override
+    public List<Product> search(String nameProduct) {
+        return productRepository.search(nameProduct);
     }
 }

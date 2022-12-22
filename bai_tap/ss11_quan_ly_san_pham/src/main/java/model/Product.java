@@ -7,6 +7,9 @@ public class Product {
     private String describeProduct;
     private String producer;
 
+    public Product() {
+    }
+
     public Product(int id, String nameProduct, int priceProduct, String describeProduct, String producer) {
         this.id = id;
         this.nameProduct = nameProduct;

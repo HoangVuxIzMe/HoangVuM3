@@ -20,7 +20,7 @@ public class ProductRepositoryImpl implements IProductRepository{
 
     @Override
     public Product findById(int id) {
-        return null;
+        return products.get(id);
     }
 
     @Override
@@ -29,7 +29,30 @@ public class ProductRepositoryImpl implements IProductRepository{
     }
 
     @Override
-    public boolean delete(int id) {
-        return false;
+    public void delete(int id) {
+        products.remove(id);
     }
+
+    @Override
+    public void update(int id, Product product) {
+        products.set(id,product);
+    }
+
+    @Override
+    public List<Product> search(String nameProduct) {
+        List<Product> list = new ArrayList<>();
+        if (nameProduct == ""){
+            for (Product product : products){
+                list.add(product);
+            }
+        }else {
+            for (Product product : products){
+                if (product.getNameProduct().toLowerCase().contains(nameProduct.toLowerCase())){
+                    list.add(product);
+                }
+            }
+        }
+        return list;
+    }
+
 }

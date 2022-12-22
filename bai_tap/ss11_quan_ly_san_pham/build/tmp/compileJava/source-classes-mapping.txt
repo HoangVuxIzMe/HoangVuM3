@@ -1,3 +1,5 @@
+config/FilterUTF8.java
+ config.FilterUTF8
 service/IProductService.java
  service.IProductService
 repository/IProductRepository.java
@@ -8,7 +10,5 @@ service/ProductServiceImpl.java
  service.ProductServiceImpl
 model/Product.java
  model.Product
-config/FilterUTF8.java
- config.FilterUTF8
 servlet/ProductServlet.java
  servlet.ProductServlet
